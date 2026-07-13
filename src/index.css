@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  /* --color-navy: #15171C;
+  --color-surface: #1C1F25;
+  --color-surfaceLight: #252932;
+  --color-border: #333842;
+  --color-text: #EDEEF0;
+  --color-muted: #9AA0AC;
+  --color-accent: #4E7DA1;
+  --color-gold: #C08A3E; */
+
+ --color-navy: #08131B;
+--color-surface: #10202B;
+--color-surfaceLight: #183040;
+--color-border: #294455;
+
+--color-text: #F1F5F9;
+--color-muted: #94A3B8;
+
+--color-accent: #06B6D4;
+--color-gold: #3B82F6;
+
+  /* --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace; */
+
+  --font-display: "Space Grotesk", sans-serif;
+--font-body: "Inter", sans-serif;
+--font-mono: "JetBrains Mono", monospace;
+
+  --animate-glow: glow 6s ease-in-out infinite;
+  --animate-float: float 5s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-navy text-text font-body;
+}
+
+.eyebrow {
+  @apply font-mono text-sm text-accent tracking-wide;
+}
+.eyebrow::before {
+  /* content: "// "; */
+  @apply text-muted;
+}
+
+.section-title {
+  @apply font-display text-3xl md:text-4xl font-semibold text-text mb-10;
+}
+
+::selection {
+  background: #4e7da144;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
