@@ -45,9 +45,9 @@ export default function Hero() {
                         <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors" aria-label="WhatsApp">
                             <FaWhatsapp />
                         </a>
-                        <a href={siteConfig.social.instagram} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors" aria-label="Instagram">
+                        {/* <a href={siteConfig.social.instagram} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors" aria-label="Instagram">
                             <FaInstagram />
-                        </a>
+                        </a> */}
                     </div>
                 </motion.div>
 

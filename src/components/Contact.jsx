@@ -54,7 +54,7 @@ export default function Contact() {
             <div className="flex justify-center gap-6 text-2xl text-muted">
                 <a href={siteConfig.social.github} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors"><FaGithub /></a>
                 <a href={siteConfig.social.linkedin} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors"><FaLinkedin /></a>
-                <a href={siteConfig.social.instagram} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors"><FaInstagram /></a>
+                {/* <a href={siteConfig.social.instagram} target="_blank" rel="noreferrer" className="hover:text-accent transition-colors"><FaInstagram /></a> */}
             </div>
         </section>
     );
